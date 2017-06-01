@@ -9,10 +9,15 @@ namespace ScrabbleScore
     public HomeModule()
     {
       Get["/"] = _ => {
+
+
         return View["index.cshtml"];
       };
       Post["/"] = _ => {
-        return View["index.cshtml"];
+        Scrabble instance = new Scrabble(Request.Form["body"]);
+        // Dictionary<char, int> newDict = instance.GetDictionary();
+
+        return View["index.cshtml", instance];
       };
     }
   }

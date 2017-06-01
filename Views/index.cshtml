@@ -1,12 +1,12 @@
 <form action="/" method="post">
   <label for="body">Write a word here to determine its score in Scrabble.</label>
-  <input id=body name=body type="text">
+  <input id="body" name="body" type="text">
   <button type="submit">Tell me my score!</button>
 </form>
 
 @if(@Model != null)
 {
   <ul>
-    <li>@Model</li>
+    <li>@Model.CheckScore(@Model.GetWord(), @Model.GetDictionary())</li>
   </ul>
 }
