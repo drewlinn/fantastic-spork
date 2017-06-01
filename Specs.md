@@ -1,6 +1,6 @@
 | Behavior                                           | Input                        | Output                                |
 |====================================================|==============================|=======================================|
-| Player can input a word; it is returned by the app | "Zoo"                        | "Zoo"                                 |
+| Player can input a word; word is returned          | "Zoo"                        | "Zoo"                                 |
 | Letters in word have scores                        | A, E, I, O, U, L, N, R, S, T | 1                                     |
 |                                                    | D, G                         | 2                                     |
 |                                                    | B, C, M, P                   | 3                                     |
