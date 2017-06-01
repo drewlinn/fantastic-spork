@@ -17,12 +17,11 @@ namespace ScrabbleScore.Objects
     [Fact]
     public void Scores_Common_Letter()
     {
-    string word = "p";
+    string word = "lore";
     Scrabble instance = new Scrabble(word);
-
     string newWord = instance.GetWord();
     Dictionary<char, int> newDictionary = instance.GetDictionary();
-    Assert.Equal(2, instance.CheckScore(newWord, newDictionary));
+    Assert.Equal(4, instance.CheckScore(newWord, newDictionary));
     }
   }
 }
